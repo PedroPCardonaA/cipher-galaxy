@@ -118,15 +118,6 @@ QB.push(
     null,
     ["9 = 3² og 9<sup>8</sup> = 3<sup>16</sup> ≡ 1, så både 9<sup>8</sup> og 9<sup>20</sup> er 1. 9 har orden 4.","9 = 3² and 9<sup>8</sup> = 3<sup>16</sup> ≡ 1, so both 9<sup>8</sup> and 9<sup>20</sup> are 1. 9 has order 4."]]},
 
-{id:"n9-04", t:9, s:"new", kind:"num",
- q:["Hvor mange generatorer har ℤ<sub>101</sub>* (gruppen fra eksamen 2025)?",
-    "How many generators does ℤ<sub>101</sub>* have (the group from the 2025 exam)?"],
- f:["$\\#\\text{generatorer} = \\varphi(p-1)$","$\\#\\text{generators} = \\varphi(p-1)$"],
- ans:40, tol:0.5,
- w:["ℤ<sub>p</sub>* er syklisk av orden <i>p</i> − 1 = 100. Med generator 3 er alle elementer 3<sup>j</sup>, og 3<sup>j</sup> er generator nøyaktig når gcd(<i>j</i>, 100) = 1.<br>100 = 2²·5², så φ(100) = 100·(1 − 1/2)·(1 − 1/5) = 100·½·⅘ = <b>40</b>.<br>Så 40 av de 100 elementene er generatorer, og 60 er det ikke (f.eks. 9 = 3² og 100 = 3<sup>50</sup>).<br>Typisk feil: φ(101) = 100 (antall elementer, ikke generatorer).",
-    "ℤ<sub>p</sub>* is cyclic of order <i>p</i> − 1 = 100. With generator 3 every element is 3<sup>j</sup>, and 3<sup>j</sup> is a generator exactly when gcd(<i>j</i>, 100) = 1.<br>100 = 2²·5², so φ(100) = 100·(1 − 1/2)·(1 − 1/5) = 100·½·⅘ = <b>40</b>.<br>So 40 of the 100 elements are generators and 60 are not (e.g. 9 = 3² and 100 = 3<sup>50</sup>).<br>Typical mistake: φ(101) = 100 (the number of elements, not generators)."]},
-
-// ===================== New: ElGamal decryption and checks =====================
 {id:"n9-05", t:9, s:"new", kind:"num",
  q:["Eksamen 2025: <i>p</i> = 101, Alices hemmelige nøkkel <i>x</i> = 6, og hun mottar (<i>c</i><sub>1</sub>, <i>c</i><sub>2</sub>) = (10, 80). Første steg i dekrypteringen er å regne <i>s</i> = <i>c</i><sub>1</sub><sup>x</sup> mod <i>p</i>. Hva er <i>s</i>?",
     "2025 exam: <i>p</i> = 101, Alice's secret key <i>x</i> = 6, and she receives (<i>c</i><sub>1</sub>, <i>c</i><sub>2</sub>) = (10, 80). The first decryption step is <i>s</i> = <i>c</i><sub>1</sub><sup>x</sup> mod <i>p</i>. What is <i>s</i>?"],

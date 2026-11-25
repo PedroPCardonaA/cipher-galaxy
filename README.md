@@ -5,7 +5,7 @@ A space-themed exam-practice game for **IDATT2503 – Programvaresikkerhet og kr
 **▶ Play:** https://pedropcardonaa.github.io/cipher-galaxy/
 
 ## What's inside
-- **300 questions across 12 topic "planets"**, 123 of them calculations. Half cover software security and half cover cryptography, like the exam:
+- **287 questions across 12 topic "planets"**, 114 of them calculations. Half cover software security and half cover cryptography, like the exam:
 
 | | Planet | Topic | Questions |
 |---|---|---|---|
@@ -15,11 +15,11 @@ A space-themed exam-practice game for **IDATT2503 – Programvaresikkerhet og kr
 | ⚙️ | Registron | Assembly tracing (x86-64): registers, syscalls, flags, loops | 23 |
 | 🐛 | Fuzzar | Fuzzing and sanitizers: libFuzzer, coverage, instrumentation, ASan/UBSan/MSan/TSan | 23 |
 | 🛠️ | Z3-Station | Systems programming and formal verification: OpenSSL, memory safety, Z3 | 21 |
-| 🔢 | Modulo | Number theory: Euclid, inverses, φ, Fermat/Euler, square-and-multiply, generators | 26 |
-| 🔐 | RSA Major | RSA: key generation, d via extended Euclid, encryption/decryption, signatures, RSA vs AES | 33 |
+| 🔢 | Modulo | Number theory: Euclid, inverses, φ, Fermat/Euler, square-and-multiply, generators | 18 |
+| 🔐 | RSA Major | RSA: key generation, d via extended Euclid, encryption/decryption, signatures, RSA vs AES | 30 |
 | 🪓 | Factoria | Attacks on RSA: Fermat, Pollard p−1, shared primes, small e, malleability, chosen ciphertext | 25 |
-| 🤝 | Diffie-Hellion | Diffie-Hellman and ElGamal: key exchange, encryption/decryption, MITM, discrete log | 25 |
-| 🧂 | Hashara | Hash functions and MACs: properties, birthday bound, length extension, HMAC, CBC-MAC, password hashing | 25 |
+| 🤝 | Diffie-Hellion | Diffie-Hellman and ElGamal: key exchange, encryption/decryption, MITM, discrete log | 24 |
+| 🧂 | Hashara | Hash functions and MACs: properties, birthday bound, length extension, HMAC, CBC-MAC, password hashing | 24 |
 | 🗝️ | Caesaria | Symmetric crypto, TLS and classical ciphers: AES, modes, OTP, randomness, TLS 1.3, affine ciphers, LFSR | 26 |
 
 - **Question sources:**

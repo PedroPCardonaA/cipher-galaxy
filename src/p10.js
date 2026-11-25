@@ -155,23 +155,6 @@ QB.push(
     ["Riktig. Svamp-konstruksjonen lekker ikke hele tilstanden, så H(k‖m) med SHA-3 er ikke lengdeutvidbar.","True. The sponge construction does not leak its whole state, so H(k‖m) with SHA-3 cannot be length-extended."]]},
 
 // ---------- 2024 Crypto 4: SuperSafe / PassSafe ----------
-{id:"H24-15p1", t:10, s:"e24", kind:"multi",
- q:["SuperSafe sier at passord-hashen PassSafe «er så sterk at den ikke trenger salt, og regner hasher lynraskt». Velg alle riktige kritikkpunkter.","SuperSafe says the password hash PassSafe \"is so strong that it needs no salt, and computes hashes lightning fast\". Select all valid criticisms."],
- o:[["Uten salt gir like passord like hasher, og forhåndsberegnede tabeller (rainbow tables) virker mot alle brukere samtidig","Without salt, equal passwords give equal hashes, and precomputed (rainbow) tables work against all users at once"],
-    ["Lynrask er en ulempe: angriperen som stjeler databasen kan teste milliarder av gjett per sekund","Lightning fast is a drawback: the attacker who steals the database can test billions of guesses per second"],
-    ["En sterk hash hjelper ikke mot ordlisteangrep: svake passord finnes uansett ved å hashe kandidater","A strong hash does not help against dictionary attacks: weak passwords are found anyway by hashing candidates"],
-    ["Feilen er egentlig at saltet må holdes hemmelig, og det sier de ingenting om","The real flaw is that the salt must be kept secret, and they say nothing about that"],
-    ["Lukket kildekode og hemmelig algoritme gjør det tryggere (Kerckhoffs' prinsipp)","Closed source and a secret algorithm make it safer (Kerckhoffs' principle)"]],
- a:[0,1,2],
- w:["Passordhashing skal ha <b>unikt tilfeldig salt</b> per bruker (like passord gir ulike hasher, forhåndsberegning blir verdiløs, hver bruker må angripes separat) og være <b>treg og minnekrevende</b> (Argon2id, bcrypt, scrypt). Uansett hvor «sterk» hashen er, er angrepet å gjette passord, og det går raskere jo raskere hashen er. Kerckhoffs: sikkerheten skal hvile på nøkkelen alene; hemmelige egenutviklede algoritmer er et faresignal.",
-    "Password hashing needs a <b>unique random salt</b> per user (equal passwords give different hashes, precomputation becomes useless, each user must be attacked separately) and must be <b>slow and memory-hard</b> (Argon2id, bcrypt, scrypt). However \"strong\" the hash is, the attack is guessing passwords, and it goes faster the faster the hash is. Kerckhoffs: security should rest on the key alone; secret home-made algorithms are a red flag."],
- x:[["Riktig. Saltet gjør hver hash unik og knuser forhåndsberegning.","True. The salt makes each hash unique and defeats precomputation."],
-    ["Riktig. Treghet er selve forsvaret i passord-hashing.","True. Slowness is the actual defence in password hashing."],
-    ["Riktig. Angriperen inverterer ikke hashen; han gjetter og sammenligner.","True. The attacker does not invert the hash; he guesses and compares."],
-    ["Feil. Saltet er offentlig og lagres ved siden av hashen. Det trenger bare å være unikt og tilfeldig.","False. The salt is public and stored next to the hash. It only needs to be unique and random."],
-    ["Feil. Kerckhoffs' prinsipp sier det motsatte: algoritmen skal kunne være offentlig, bare nøkkelen hemmelig.","False. Kerckhoffs' principle says the opposite: the algorithm may be public, only the key secret."]]},
-
-// ---------- Assignment 3, problem 2: toy HMAC ----------
 {id:"A3-2a1", t:10, s:"assign", kind:"num",
  q:["Øving 3, oppgave 2: K = 1001, ipad = 0011, opad = 0101, og h er midtkvadrat-hashen (x² mod 2⁸, de fire midterste bitene av 8-bits resultatet). For meldingen m = 0110 er input til den indre hashen (K⊕ipad)‖m. Hva er (K⊕ipad‖m)² mod 2⁸ i desimal?","Assignment 3, problem 2: K = 1001, ipad = 0011, opad = 0101, and h is the midsquare hash (x² mod 2⁸, the middle four bits of the 8-bit result). For the message m = 0110 the input to the inner hash is (K⊕ipad)‖m. What is (K⊕ipad‖m)² mod 2⁸ in decimal?"],
  f:["$h(x)=\\text{midten av }(x^2 \\bmod 2^8),\\quad \\text{indre}=h\\big((K\\oplus\\text{ipad})\\,\\|\\,m\\big)$","$h(x)=\\text{middle of }(x^2 \\bmod 2^8),\\quad \\text{inner}=h\\big((K\\oplus\\text{ipad})\\,\\|\\,m\\big)$"],
